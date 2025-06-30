@@ -1,0 +1,59 @@
+"""這是多行註解"""
+
+# 這是單行註解
+print("hello world")  # print這是在終端機顯示文字的指令
+# ctrl + / 可註解或取消註解
+
+# 基本型態
+print(1)  # int這是整數-1 0 1 2 3
+print(1.0)  # float這是浮點數-1.0 0.0 1.0 2.0 3.0
+print("1")  # str這是字串"1" "hello" "world"
+print("hello")  # str這是字串"1" "hello" "world"
+print(True)  # bool這是布林值True False
+print(False)  # bool這是布林值True False
+# 變數
+a = 10  # 新增一個儲存整數的變數a，並將值10賦給它
+print(a)  # 在終端機顯示變數a的值
+a = "apple"  # 這是變數a的值是字串"apple"
+print(a)  # 在終端機顯示變數a的值
+# 運算子
+print(1 + 1)  # 加法運算，結果是2
+print(1 - 1)  # 減法運算，結果是0
+print(2 * 3)  # 乘法運算，結果是6
+print(6 / 3)  # 除法運算，結果是2.0
+print(7 // 3)  # 整數除法運算，結果是2
+print(5 % 2)  # 取餘數運算，結果是1
+print(2**3)  # 指數運算，結果是8
+# 優先順序
+# 1. 括號 ()
+# 2. 指數 **
+# 3. 乘除法 * / // % 乘 除 取商 取餘數
+# 4. 加減法 + -
+# 字串運算
+print("hello" + "world")  # 字串相加，結果是"helloworld"
+print("hello" * 3)  # 字串乘法，結果是"hellohellohello"
+# 字串格式化
+name = "apple"
+age = 10
+print(f"我的名字是{name}，我今年{age}歲")  # 使用f-string格式
+
+print(len("apple"))  # 計算字串長度，結果是5
+print(len(","))  # len(",")計算字串長度，結果是1
+# type()函式
+print(type(1))  # 顯示變數的型態，結果是<class 'int'>
+print(type(1.0))  # 顯示變數的型態，結果是<class 'float'>
+print(type("1"))  # 顯示變數的型態，結果是<class 'str'>
+print(type(True))  # 顯示變數的型態，結果是<class 'bool'>
+# 型態轉換
+print(int(1.0))  # 將浮點數(float)轉換為整數(int)，結果是1
+print(float(1))  # 將整數(int)轉換為浮點數(float)，結果是1.0
+print(str(1))  # 將整數(int)轉換為字串(str)，結果是"1"
+print(bool(1))  # 將整數(int)轉換為布林值(bool)，結果是True
+print(bool(0))  # 將整數(int)轉換為布林值(bool)，結果是False
+print(bool(""))  # 將空字串(str)轉換為布林值(bool)，結果是False
+print(bool("hello"))  # 將非空字串(str)轉換為布林值(bool)，結果是True
+print(float("1.0"))  # 將字串(str)轉換為浮點數(float)，結果是1.0
+print(int("1"))  # 將字串(str)轉換為整數(int)，結果是1
+print(str(True))  # 將布林值(bool)轉換為字串(str)，結果是"True"
+print(str(False))  # 將布林值(bool)轉換為字串(str)，結果是"False"
+# print(int("hello"))  # 這會報錯，因為"hello"不能轉換為整數
