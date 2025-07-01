@@ -34,3 +34,19 @@ print(not False)  # True
 # 6 not
 # 7 and
 # 8 or
+
+# 密碼門檢查
+password = input("請輸入密碼：")  # 使用input函式從使用者那裡獲取密碼
+if password == "1234":
+    print("歡迎Jeffrey")
+elif password == "5678":
+    print("歡迎Tim")
+elif password == "0000":
+    print("歡迎小明")
+elif password == "2222":
+    print("歡迎小狗")
+else:
+    print("密碼錯誤，請重新輸入")
+# 連續使用if elif else 的差別
+# elif可以排除前面有判斷過的條件，所以縮短判斷條件的複雜度，也節省了時間
+# 但是如果是使用多個if來做判斷，則每個if都會被執行，所以效率較低
