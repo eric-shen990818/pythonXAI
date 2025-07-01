@@ -30,3 +30,10 @@ if st.button("按我一下", key="balloon"):
 if st.button("按我一下", key="snow"):
     st.snow()
 st.markdown("---")
+
+st.title("奇偶數判斷器")
+number = st.number_input("請輸入一個整數", min_value=0, step=1)
+if number % 2 == 0:
+    st.write(f"{number} 是偶數")
+else:
+    st.write(f"{number} 是奇數")
