@@ -81,7 +81,34 @@ print(str(False))  # 將布林值(bool)轉換為字串(str)，結果是"False"
 # area = pi * r**2  # 計算圓的面積
 # print(f"圓的面積是{area}")  # 在終端機顯示圓的面積
 # BMI計算器
-cm = float(input("請輸入身高(cm)"))
-kg = float(input("請輸入體重(kg)"))
-bmi = kg / (cm / 100) ** 2  # 計算BMI
-print(f"你的BMI是{bmi:.2f}")  # 在終端機顯示BMI，保留兩位小數
+number = int(input("請輸入一個整數: "))
+x = str(number)
+print(f"{x+x+x}")
+
+word = input("請輸入一個字串: ")
+x = len(word)
+print(f"字串的長度是{x}個字元")
+
+a = str(input("請輸入商品名稱: "))
+b = int(input("請輸入商品價格: "))
+c = int(input("請輸入商品數量: "))
+print(f"你買了{c} 個{a}，每個{a}的價格是{b}元，總共花費了{b*c}元")
+
+
+a = int(input("請輸入第一個整數:"))
+b = int(input("請輸入第二個整數:"))
+c = a + b
+d = a**b
+e = a // b
+f = a % b
+print(f"{a} + {b} = {c}")
+print(f"{a} ** {b} = {d}")
+print(f"{a} 除以 {b} 的商為 {e} 餘數為 {f}")
+
+print("輸入開始")
+# input()是一個函式，用來從使用者那裡獲取輸入
+# ()裡面的文字是提示訊息會先顯示在終端機才會等待使用者輸入
+a = input("請輸入一些數字: ")
+print("輸入結束")
+print(int(a) + 10)
+print(type(a))  # 證明透過input()輸入內容都字串
