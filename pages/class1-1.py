@@ -57,3 +57,31 @@ print(int("1"))  # 將字串(str)轉換為整數(int)，結果是1
 print(str(True))  # 將布林值(bool)轉換為字串(str)，結果是"True"
 print(str(False))  # 將布林值(bool)轉換為字串(str)，結果是"False"
 # print(int("hello"))  # 這會報錯，因為"hello"不能轉換為整數
+
+
+# a = float(
+#     input("請輸入三角形的底")
+# )  # 使用input函式從使用者那裡獲取輸入，並將其轉換為整數
+# b = float(
+#     input("請輸入三角形的高")
+# )  # 使用input函式從使用者那裡獲取輸入，並將其轉換為整數
+# area = a * b / 2  # 計算三角形的面積
+# print(f"三角形的面積是{area}")  # 在終端機顯示三角形的面積
+
+# name = input("請輸入你的名字")  # 使用input函式從使用者那裡獲取名字
+# age = int(
+#     input("請輸入你的年齡")
+# )  # 使用input函式從使用者那裡獲取年齡，並將其轉換為整數
+# print(f"你好{name}，你今年{age}歲")  # 在終端機顯示問候語
+
+# pi = 3.14  # 定義圓周率
+# r = float(
+#     input("請輸入圓的半徑")
+# )  # 使用input函式從使用者那裡獲取圓的半徑，並將其轉換為浮點數
+# area = pi * r**2  # 計算圓的面積
+# print(f"圓的面積是{area}")  # 在終端機顯示圓的面積
+# BMI計算器
+cm = float(input("請輸入身高(cm)"))
+kg = float(input("請輸入體重(kg)"))
+bmi = kg / (cm / 100) ** 2  # 計算BMI
+print(f"你的BMI是{bmi:.2f}")  # 在終端機顯示BMI，保留兩位小數
