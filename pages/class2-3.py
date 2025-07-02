@@ -19,3 +19,14 @@ a = int(input("請輸入一個數字: "))
 b = int(input("請輸入另一個數字: "))
 for i in range(a, b + 1):
     print(f"{i}號在教室", end=" ")
+
+a = int(input("請輸入一個數字: "))
+b = int(input("請輸入另一個數字: "))
+c = 0
+for i in range(a, b + 1):
+    c = c + i
+print(f"{a}加到{b}={c}", end=" ")
+
+a = int(input("請輸入一個數字: "))
+b = int(input("請輸入另一個數字: "))
+print(f"{(a+b)*(b-a+1)/2}", end=" ")
