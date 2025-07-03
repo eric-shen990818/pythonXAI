@@ -73,24 +73,40 @@ import streamlit as st
 #         st.button(f"按鈕{i+1}", key=f"btn{i+10}")  # 在cols[i]中建立一個按鈕類似
 #     # st.balloons()  # 在cols[i]中建立一個氣球
 
-st.write("---")
-st.title("columns排列元件效果比較")
-# 2columns
-col1, col2 = st.columns(2)
-with col1:
-    st.button("按鈕1", key="1")
-    st.button("按鈕2", key="2")
-    st.button("按鈕3", key="3")
-with col2:
-    st.write("這是col2")
-    st.write("這是col2")
-    st.write("這是col2")
+# st.write("---")
+# st.title("columns排列元件效果比較")
+# # 2columns
+# col1, col2 = st.columns(2)
+# with col1:
+#     st.button("按鈕1", key="1")
+#     st.button("按鈕2", key="2")
+#     st.button("按鈕3", key="3")
+# with col2:
+#     st.write("這是col2")
+#     st.write("這是col2")
+#     st.write("這是col2")
+
+# st.write("---")
+
+# for i in range(3):
+#     col1, col2 = st.columns(2)
+#     with col1:
+#         st.button(f"按鈕{i+1}", key=f"{i+4}")
+#     with col2:
+#         st.write(f"這是col2_{i+1}")
+
+# st.write("---")
+# st.title("文字輸入元件")
+# # st.text_input指令格式 st.text_input(輸入欄位的標題,value="預設顯示文字")
+# text = st.text_input("請輸入文字：", value="這是預設顯示文字")
+# st.write(f"你輸入的文字是：{text}")
 
 st.write("---")
+st.title("session_state")
 
-for i in range(3):
-    col1, col2 = st.columns(2)
-    with col1:
-        st.button(f"按鈕{i+1}", key=f"{i+4}")
-    with col2:
-        st.write(f"這是col2_{i+1}")
+if "ans1" not in st.session_state:  # 如果session_state中沒有ans1
+    st.session_state.ans1 = 1  # 設定session_state中的ans1為1
+
+if st.button("按下去ans+1", key="ans2"):  # 如果按下去ans+1
+    st.session_state.ans1 = st.session_state.ans1 + 1  # 將session_state中的ans1加1
+st.write(f"ans={st.session_state.ans1}")  # 印出session_state中的ans1
