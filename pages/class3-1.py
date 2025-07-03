@@ -101,12 +101,12 @@ import streamlit as st
 # text = st.text_input("請輸入文字：", value="這是預設顯示文字")
 # st.write(f"你輸入的文字是：{text}")
 
-st.write("---")
-st.title("session_state")
+# st.write("---")
+# st.title("session_state")
 
-if "ans1" not in st.session_state:  # 如果session_state中沒有ans1
-    st.session_state.ans1 = 1  # 設定session_state中的ans1為1
+# if "ans1" not in st.session_state:  # 如果session_state中沒有ans1
+#     st.session_state.ans1 = 1  # 設定session_state中的ans1為1
 
-if st.button("按下去ans+1", key="ans2"):  # 如果按下去ans+1
-    st.session_state.ans1 = st.session_state.ans1 + 1  # 將session_state中的ans1加1
-st.write(f"ans={st.session_state.ans1}")  # 印出session_state中的ans1
+# if st.button("按下去ans+1", key="ans2"):  # 如果按下去ans+1
+#     st.session_state.ans1 = st.session_state.ans1 + 1  # 將session_state中的ans1加1
+# st.write(f"ans={st.session_state.ans1}")  # 印出session_state中的ans1
