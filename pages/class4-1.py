@@ -22,3 +22,45 @@ print(grade["小美"]["英文"][0])
 
 # 取得小華的第二次國文成績 # 76
 print(grade["小華"]["國文"][1])
+
+# 取得dict的key
+print(d.keys())  # ['a', 'b', 'c', 'd', 'e']
+for key in d.keys():
+    print(key)
+
+# 取得dict的value
+print(d.values())  # [1, 2, 3, 4, 5]
+for value in d.values():
+    print(value)
+
+# 取得dict的key-value
+print(d.items())  # [('a', 1), ('b', 2), ('c', 3), ('d', 4), ('e', 5)]
+for key, value in d.items():
+    print(f"{key}:{value}")
+
+# 新增/修改dict的key-value
+d["f"] = 6
+print(d)  # {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}
+d["a"] = 5  # 修改
+print(d)  # {'a': 5, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6}
+
+# 刪除dict的key-value,pop()方法
+# 如果資料有存在，就刪除並回傳value
+print(d.pop("a"))  # 5
+# 如果資料不存在，就回傳預設值
+print(d.pop("g", "not found"))  # not found
+# 如果資料不存在，就會報錯
+
+
+# 檢查dict是否有某個key
+# in不能檢查value
+# 跟list比較，in可以檢查的是list的元素與dict的key
+print("a" in d)  # True
+print("g" in d)  # False
+
+# 比較複雜的dict
+d = {"a": [1, 2, 3], "b": {"c": 4, "d": 5}}
+print(d["a"])  # [1,2,3]
+print(d["a"][0])  # 1
+print(d["b"])  # {'c': 4, 'd': 5}
+print(d["b"]["c"])  # 4
