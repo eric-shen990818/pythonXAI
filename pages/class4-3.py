@@ -57,8 +57,15 @@ st.markdown("---")
 # 新增庫存區塊
 st.subheader(" 新增庫存")
 
-product_names = [os.path.splitext(img)[0] for img in image_files]  # 檔名不含副檔名
-product_map = {os.path.splitext(img)[0]: img for img in image_files}  # 名稱 → 檔名
+# product_names = [os.path.splitext(img)[0] for img in image_files]  # 檔名不含副檔名
+product_names = []
+for img in image_files:
+    product_names.append(os.path.splitext(img)[0])
+
+# product_map = {os.path.splitext(img)[0]: img for img in image_files}  # 名稱 → 檔名
+product_map = {}
+for img in image_files:
+    product_map[os.path.splitext(img)[0]] = img
 
 col1, col2 = st.columns(2)
 with col1:
