@@ -3,7 +3,7 @@ import random
 number = random.randint(1, 100)  # 產生一個整數
 enter = 0
 while enter != number:
-    enter = int(input("請輸入一個整數："))
+    enter = int(input("請輸入一個1~100間的整數："))
     if enter == number:
         print("恭喜答對")
         break
